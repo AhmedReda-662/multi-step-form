@@ -1,5 +1,6 @@
 <h1>Multi-Step-Platform</h1>
 <p>A frontEnd mentor challenge</p>
+live : https://shimmering-buttercream-73e1c2.netlify.app/
 <hr/>
 <img width="1267" height="771" alt="image" src="https://github.com/user-attachments/assets/f6813a8f-8c44-4328-be77-59340f6ba500" />
 <hr/>
@@ -10,5 +11,7 @@
 <img width="1270" height="763" alt="image" src="https://github.com/user-attachments/assets/93aaf30c-8361-400a-b36e-08d8848720e5" />
 <hr/>
 <img width="1216" height="771" alt="image" src="https://github.com/user-attachments/assets/45424b71-8faf-4292-afa7-0df7348973ab" />
+<hr/>
+
 
 
