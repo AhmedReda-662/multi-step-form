@@ -1,27 +1,25 @@
-import { useState } from "react";
 import { useData } from "../context/DataContext";
 
 function AddOnsBox({ item }) {
-  const [select, setSelect] = useState(false);
   const { selectedServices, dispatch } = useData();
   function handleSelect() {
-    setSelect((e) => !e);
-    if (!select) {
+    let x = item;
+    if (!item.active) {
+      x.active = true;
       dispatch({
         type: "setSelectedServices",
-        payload: [...selectedServices, item],
+        payload: [...selectedServices, x],
       });
     } else {
-      const filterServices = selectedServices.filter(
-        (i) => i.header !== item.header
-      );
-      dispatch({ type: "setSelectedServices", payload: [...filterServices] });
+      x.active = false;
+      let filterd = selectedServices.filter((i) => i.header !== item.header);
+      dispatch({ type: "setSelectedServices", payload: [...filterd] });
     }
   }
   return (
     <div
       className={`box flex justify-between items-center border-1 border-indigo-700 w-[80%] p-5 rounded-md ${
-        select ? "bg-gray-50" : "bg-white"
+        item.active ? "bg-gray-50" : "bg-white"
       }`}
       key={item.header}
     >
@@ -30,6 +28,7 @@ function AddOnsBox({ item }) {
           type="checkbox"
           className="accent-indigo-600 w-4"
           onChange={handleSelect}
+          checked={item.active}
         />
         <div className="text">
           <h3 className="font-bold text-slate-800 capitalize">{item.header}</h3>

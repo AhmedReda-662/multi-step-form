@@ -8,19 +8,19 @@ const addOns = [
     header: "online service",
     details: "Access to multiplayer games",
     price: 1,
-    active: true,
+    active: false,
   },
   {
     header: "Large Storage",
     details: "Extra 1TB of cloud save",
     price: 2,
-    active: true,
+    active: false,
   },
   {
     header: "Customizable Profile",
     details: "Custom theme on your profile",
     price: 2,
-    active: true,
+    active: false,
   },
 ];
 function AddOns() {

@@ -1,5 +1,5 @@
-import { Outlet } from "react-router";
 import Steps from "../componantes/Steps";
+import ProtectedRoute from "../componantes/ProtectedRoute";
 
 function AppLayout() {
   return (
@@ -9,7 +9,7 @@ function AppLayout() {
           <Steps />
         </div>
         <div className="right-side p-7 flex flex-col flex-1">
-          <Outlet />
+          <ProtectedRoute />
         </div>
       </div>
     </main>

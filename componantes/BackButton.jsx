@@ -1,10 +1,10 @@
-import { Link } from "react-router";
+import { Link, NavLink } from "react-router";
 
 function BackButton({ path }) {
   return (
-    <Link className="text-gray-400 cursor-pointer" to={path}>
+    <NavLink className="text-gray-400 cursor-pointer" to={path}>
       Go Back
-    </Link>
+    </NavLink>
   );
 }
 

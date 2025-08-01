@@ -36,8 +36,8 @@ function YourInfo() {
           errorsMessage={errors?.Name?.message}
           type={"text"}
           validation={(value) => {
-            if (value.length > 10) {
-              return "Name Should Be Less Than 100 Character";
+            if (value.length > 20) {
+              return "Name Should Be Less Than 20 Character";
             } else {
               return;
             }
