@@ -1,6 +1,6 @@
 <h1>Multi-Step-Platform</h1>
 <p>A frontEnd mentor challenge</p>
-live : [https://shimmering-buttercream-73e1c2.netlify.app/](https://gleeful-bunny-ab8914.netlify.app/)
+live : https://gleeful-bunny-ab8914.netlify.app
 <hr/>
 <img width="1267" height="771" alt="image" src="https://github.com/user-attachments/assets/f6813a8f-8c44-4328-be77-59340f6ba500" />
 <hr/>
